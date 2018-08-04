@@ -1,0 +1,402 @@
+/*
+File Name: style.css
+Date: 08/03/18
+Programmer: Misti D.
+*/
+
+
+/* MOBILE STYLESHEET */
+
+
+/* Responsive design with hidden navigation on mobile devices */
+
+html {
+    background-color: #fff;
+}
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    background-color: rgb(255, 0, 0);
+}
+
+#logo {
+    display: block;
+    margin: 0 auto 0 20px;
+    max-width: 200px;
+    padding-bottom: 20px;
+    float: left;
+}
+
+img {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/* Hidden navigation for mobile (w3 Schools) */
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    clear: both;
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px #000;
+    text-transform: uppercase;
+    letter-spacing: 2.0pt;
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+    display: none;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 767px) {
+    
+    .topnav a {
+        display: none;
+    }
+    
+    .topnav a.icon {
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 767px) {
+    
+    .topnav.responsive {
+        position: relative;
+    }
+    
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+
+.topnav a:link {
+    color: #FFFCDD;
+}
+
+.topnav a:visited {
+    color: gray;
+}
+
+.navicon {
+    padding-left: 20px;
+    display: block;
+}
+
+a:link {
+    color: #68321A;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9B9287;
+}
+
+#hero {
+    max-width: 100%;
+}
+
+#headline {
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 1.3pt;
+    word-spacing: 2.1pt;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    margin: 1em;
+    clear: both;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+p {
+    margin: 1em;
+}
+
+h2, h3, h4 {
+    text-align: center;
+    letter-spacing: 1.3pt;
+    word-spacing: 2.1pt;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    margin: 1em;
+}
+
+h1 {
+    font-size: 1em;
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 1.3em;
+    line-height: 2em;
+    padding-top: 10px;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+h4 {
+    font-size: 1.1em;
+    color: #FFF;
+}
+
+em {
+    font-style: italic;
+}
+
+main h1 {
+    font-size: 2.6em;
+    text-align: center;
+    font-family: 'Niconne';
+    letter-spacing: 1.3pt;
+    word-spacing: 2.1pt;
+    line-height: 1em;
+    margin-bottom: 0.75em;
+}
+
+section {
+    padding: 1em;
+}
+
+#contact {
+    font-size: 0.75em;
+    text-align: center;
+    color: #FFF;
+    padding: 10px;
+    padding-bottom: 20px;
+    line-height: 0.75em;
+    text-shadow: 0.3px 0.3px 0.3px gray;
+}
+
+#contact a:link {
+    text-decoration: none;
+}
+
+footer {
+    font-size: .80em;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(255, 0, 0);
+}
+
+#social {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#social a {
+    color: #FFF;
+}
+
+.socicon {
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+copyright {
+    color: #FFF;
+    font-size: .80em;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.centerme {
+    text-align: center;
+}
+
+#featuredimg {
+    color: #000;
+    text-align: center;
+    padding: 1px;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+#featuredimg img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+/* SPECIAL MOBILE COLOR STYLING */
+
+@media only screen and (max-width: 767px) {
+    
+    #headline {
+        background-color: rgb(255, 0, 0);
+        color: #FFF;
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px 0 20px 0;
+    }
+    
+    #hero {
+        padding-top: 10px;
+    }
+}
+
+
+/* PHABLET CSS */
+
+
+/* No Change - kept hamburger nav for larger phones with displays up to 767px due to number of menu items (7) */
+
+
+/* TABLET CSS */
+
+
+/* Responsive tablet design with vertical navigation for iPads and larger tablets between 768 and 1024px */
+
+@media only screen and (min-width: 768px) {
+    
+    header {
+        height: auto;
+    }
+    
+    #logo {
+        max-width: 25%;
+    }
+    
+    .topnav {
+        font-size: 1em;
+        letter-spacing: 1.2pt;
+        text-align: center;
+        padding-top: 30px;
+        line-height: 0.8em;
+    }
+    
+    .topnav ul {
+        list-style-type: none;
+    }
+    
+    .topnav li {
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    .topnav a {
+        text-decoration: none;
+        padding-right: 15px;
+        color: #fffcdd;
+    }
+    
+    .topnav a:hover {
+        color: #F59B24;
+        transition: color 1s 0.25s ease-in-out;
+    }
+    
+    body {
+        font-size: 1.1em;
+    }
+    
+    h1, h2, h3 {
+        font-size: 1.1em;
+    }
+    
+    #contact {
+        font-size: 0.9em;
+    }
+}
+
+
+/* DESKTOP CSS */
+
+
+/* Design Notes - 
+    -Vertical navigation style for mobile is replaced with a traditional horizontal nav bar with a dark background color
+    -Large hero image slider (coming soon)
+    -Image sizes are displayed using max-width properties; main section images are sized to 640x436, and body images are sized to 640x426 for consistency
+    -*/
+
+@media only screen and (min-width: 1025px) {
+    
+    header {
+        height: auto;
+    }
+    
+    #logo {
+        max-width: 200px;
+        padding-bottom: 5px;
+    }
+    
+    .topnav {
+        font-size: 1.2em;
+        letter-spacing: 1.3pt;
+        line-height: 1em;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .topnav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    .topnav li {
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    .topnav a {
+        text-decoration: none;
+        padding-right: 30px;
+    }
+    
+    .intropics1 {
+        margin: 0 10px 10px 0;
+        display: block;
+        max-height: 600px;
+        max-width: 1920px;
+    }
+    
+    #hero img {
+        max-height: 25%;
+    }
+}
