@@ -27,7 +27,7 @@
 
             <!-- Responsive Navigation -->
 
-            <div class="topnav" id="myTopnav">
+            <nav class="topnav" id="myTopnav">
 
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -38,7 +38,7 @@
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/nav.png" class="navicon"></a>
                     </li>
                 </ul>
-            </div>
+            </nav>
 
             <!-- Mobile Nav Hamburger Menu Script -->
 
