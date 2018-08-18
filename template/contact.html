@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+File Name: contact.html
+Date: 08/10/18
+Programmer: Misti D.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Niconne" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/generic.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+    <script src="https://use.fontawesome.com/3047166c2e.js"></script>
+
+</head>
+
+<!-- top section -->
+
+<body>
+    <div id="container">
+        <header>
+
+            <!-- Logo -->
+
+            <img src="images/placeholder.jpg" id="logo" alt="Ace in the Hole Logo">
+
+            <!-- Responsive Navigation -->
+
+            <nav class="topnav" id="myTopnav">
+
+                <ul>
+                    <li><a href="template.html.html">Home</a></li>
+                    <li><a href="registration.html">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/nav.png" class="navicon"></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Nav Hamburger Menu Script -->
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+
+            </script>
+
+        </header>
+
+        <!-- main section -->
+
+        <main>
+                <h3>For more information, please contact us using the form below</h3>
+                <h3>Required fields are marked with an asterisk (&#42;).</h3>
+
+        </main>
+
+
+        <div id="contactform">
+            <form id="contact" name="contact" method="post" action="contact_process.php">
+                <label for="name" class="label">&#42;Name:</label>
+                <input type="text" name="name" id="name" class="textbox" required>
+                <label for="email" class="label">&#42;Email:</label>
+                <input type="email" name="email" id="email" class="textbox" required>
+                <label for="phone" class="label">&#42;Phone:</label>
+                <input type="phone" name="phone" id="phone" class="textbox" required>
+                <label for="comments" class="label">&#42;Comments:</label>
+                <textarea name="comments" id="comments" cols="20" rows="2" class="textbox" required></textarea>            
+                <label for="inquirytype" class="label">Category:</label>
+                <select name="inquirytype" form="contactform">
+                  <option value="Volunteer">Volunteer</option>
+                  <option value="Athlete">Athlete</option>
+                  <option value="Interested Party">Interested Party</option>
+                  <option value="Other">Other</option>
+                </select>
+                <input type="Submit" value="Send" class="submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+
+        <!-- Contact Information  -->
+
+        <div id="contact">
+            <h3>123 Main St. #345</h3>
+            <h3>Anytown, OR 97200</h3>
+            <h3>(503) 555-1212</h3>
+            <h3><a href="">email@address.com</a></h3>
+        </div>
+
+        <!-- SOCIAL ICONS BELOW ARE PLACEHOLDERS AWAITING ACTIVE LINKS -->
+
+        <div id="social">
+            <a href="" class="socicon"> <i class="fa fa-facebook fa-3x"></i></a>
+            <a href="" class="socicon"> <i class="fa fa-twitter fa-3x"></i></a>
+            <a href="" class="socicon"> <i class="fa fa-instagram fa-3x"></i></a>
+        </div>
+
+        <copyright>Copyright &copy; 2018 Ace in the Hole Multisport Events. Designed by Fictitious Design Co.</copyright>
+
+    </footer>
+
+    </div>
+</body>
+
+</html>

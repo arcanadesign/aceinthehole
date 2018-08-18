@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+File Name: registration.html
+Date: 08/10/18
+Programmer: Misti D.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Niconne" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/generic.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+    <script src="https://use.fontawesome.com/3047166c2e.js"></script>
+
+</head>
+
+<!-- top section -->
+
+<body>
+    <div id="container">
+        <header>
+
+            <!-- Logo -->
+
+            <img src="images/placeholder.jpg" id="logo" alt="Ace in the Hole Logo">
+
+            <!-- Responsive Navigation -->
+
+            <nav class="topnav" id="myTopnav">
+
+                <ul>
+                    <li><a href="template.html">Home</a></li>
+                    <li><a href="registration.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/nav.png" class="navicon"></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Nav Hamburger Menu Script -->
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+
+            </script>
+
+        </header>
+
+        <!-- main section -->
+
+        <main>
+                <h3>To register for an upcoming event, please submit the form below.</h3>
+                <h3>Required fields are marked with an asterisk (&#42;).</h3>
+            </div>
+
+        </main>
+
+
+        <div id="regform">
+            
+            <form name="regform" method="post" action="registration_process.php">
+                
+                <label for="regtype" class="label">&#42;Type:</label>
+                <select name="regtype" form="regform" required>
+                  <option value="Volunteer">Volunteer</option>
+                  <option value="Athlete">Athlete</option>
+                </select>
+                
+                <label for="name" class="label">&#42;Name:</label>
+                <input type="text" name="name" id="name" class="textbox" required>
+                
+                <label for="email" class="label">&#42;Email:</label>
+                <input type="email" name="email" id="email" class="textbox" required>
+                
+                <label for="phone" class="label">&#42;Phone:</label>
+                <input type="phone" name="phone" id="phone" class="textbox" required>
+                
+                <label for="eventtype" class="label">&#42;Event:</label>
+                <select name="regtype" form="regform" required>
+                  <option value="EventA">Event A</option>
+                  <option value="EventB">Event B</option>
+                </select>
+                
+                <label for="ecname" class="label">&#42;Emergency Contact Name:</label>
+                <input type="text" name="ecname" id="ecname" class="textbox" required>
+                
+                <label for="ecphone" class="label">&#42;Emergency Phone:</label>
+                <input type="phone" name="ecphone" id="ecphone" class="textbox" required>
+                
+                <label for="shirtsize" class="label">Shirt Size:</label>
+                <select name="shirtsize" form="regform">
+                  <option value="Small">Small</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Large">Large</option>    
+                </select>
+                
+                <label for="gender" class="label">Gender:</label>
+                <select name="gender" form="regform">
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                  <option value="Non-binary">Non-binary</option>    
+                </select>
+                
+                <label for="comments" class="label">Comments:</label>
+                <textarea name="comments" id="comments" cols="20" rows="2" class="textbox"></textarea>
+                
+                
+                <input type="Submit" value="Send" class="submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+
+        <!-- Contact Information  -->
+
+        <div id="contact">
+            <h3>123 Main St. #345</h3>
+            <h3>Anytown, OR 97200</h3>
+            <h3>(503) 555-1212</h3>
+            <h3><a href="">email@address.com</a></h3>
+        </div>
+
+        <!-- SOCIAL ICONS BELOW ARE PLACEHOLDERS AWAITING ACTIVE LINKS -->
+
+        <div id="social">
+            <a href="" class="socicon"> <i class="fa fa-facebook fa-3x"></i></a>
+            <a href="" class="socicon"> <i class="fa fa-twitter fa-3x"></i></a>
+            <a href="" class="socicon"> <i class="fa fa-instagram fa-3x"></i></a>
+        </div>
+
+        <copyright>Copyright &copy; 2018 Ace in the Hole Multisport Events. Designed by Fictitious Design Co.</copyright>
+
+    </footer>
+
+    </div>
+</body>
+
+</html>

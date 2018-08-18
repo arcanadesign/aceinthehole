@@ -30,9 +30,9 @@
             <nav class="topnav" id="myTopnav">
 
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="template.php">Home</a></li>
+                    <li><a href="registration.php">Events</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                     <li><a href="#">About</a></li>
                     <li>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/nav.png" class="navicon"></a>
