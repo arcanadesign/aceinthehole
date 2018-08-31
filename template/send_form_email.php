@@ -4,7 +4,7 @@ if(isset($_POST['email'])) {
     //Freecontactform resource
  
     // Email Destination
-    $email_to = "misti.dodgens15@pcc.edu";
+    $email_to = "vexingbox@gmail.com";
     $email_subject = "Ace Website Inquiry";
  
     function died($error) {

@@ -10,7 +10,7 @@ Programmer: Misti D.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Niconne" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway|Roboto" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/generic.css" rel="stylesheet" type="text/css">
     <link href="css/grid.css" rel="stylesheet" type="text/css">
@@ -29,19 +29,19 @@ Programmer: Misti D.
 
             <!-- Logo -->
 
-            <img src="images/placeholder.jpg" id="logo" alt="Ace in the Hole Logo">
+             <a href="index.html"><img src="images/acelogo.png" id="logo" alt="Ace in the Hole Logo"></a>
 
             <!-- Responsive Navigation -->
 
             <nav class="topnav" id="myTopnav">
 
                 <ul>
-                    <li><a href="template.html">Home</a></li>
-                    <li><a href="registration.html">Events</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/nav.png" class="navicon"></a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/nav.png" class="navicon" alt="navigation icon"></a>
                     </li>
                 </ul>
             </nav>
@@ -61,20 +61,24 @@ Programmer: Misti D.
             </script>
 
         </header>
+        
+    <!-- Responsive Hero Image (will be used on most pages) -->
+
+    <div id="hero">
+        <a href="#"></a><img src="images/slide1.jpg" alt="large crowd of people running"></div>
 
         <!-- main section -->
 
         <main>
                 <h3>To register for an upcoming event, please submit the form below.</h3>
                 <h3>Required fields are marked with an asterisk (&#42;).</h3>
-            </div>
 
         </main>
 
 
         <div id="regform">
             
-            <form name="regform" method="post" action="registration_process.php">
+            <form id="regform" name="regform" method="post" action="registration_process.php">
                 
                 <label for="regtype" class="label">&#42;Type:</label>
                 <select name="regtype" form="regform" required>
@@ -125,7 +129,7 @@ Programmer: Misti D.
             </form>
         </div>
     </div>
-
+    
     <!-- footer -->
     <footer>
 
@@ -141,16 +145,14 @@ Programmer: Misti D.
         <!-- SOCIAL ICONS BELOW ARE PLACEHOLDERS AWAITING ACTIVE LINKS -->
 
         <div id="social">
-            <a href="" class="socicon"> <i class="fa fa-facebook fa-3x"></i></a>
-            <a href="" class="socicon"> <i class="fa fa-twitter fa-3x"></i></a>
-            <a href="" class="socicon"> <i class="fa fa-instagram fa-3x"></i></a>
+            <a href="https://www.facebook.com/cas222cascade/" class="socicon"> <i class="fa fa-facebook fa-3x"></i></a>
+            <a href="https://twitter.com/pcccas222?ref_src=twsrc%5Etfw" class="socicon"> <i class="fa fa-twitter fa-3x"></i></a>
         </div>
 
         <copyright>Copyright &copy; 2018 Ace in the Hole Multisport Events. Designed by Fictitious Design Co.</copyright>
 
     </footer>
 
-    </div>
 </body>
 
 </html>

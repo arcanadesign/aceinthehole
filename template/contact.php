@@ -6,11 +6,16 @@ include 'includes/header.php';
 
 ?>
 
+   <!-- Responsive Hero Image (will be used on most pages) -->
+
+        <div id="hero">
+            <a href="#"></a><img src="images/featured2crop.jpg" alt="woman running in marathon"></div>
+
         <!-- main section -->
 
         <main>
-                <h3>For more information, please contact us using the form below</h3>
-                <h3>Required fields are marked with an asterisk (&#42;).</h3>
+            <h3>For more information, please contact us using the form below</h3>
+            <h3>Required fields are marked with an asterisk (&#42;).</h3>
 
         </main>
 
@@ -24,7 +29,7 @@ include 'includes/header.php';
                 <label for="phone" class="label">&#42;Phone:</label>
                 <input type="phone" name="phone" id="phone" class="textbox" required>
                 <label for="comments" class="label">&#42;Comments:</label>
-                <textarea name="comments" id="comments" cols="20" rows="2" class="textbox" required></textarea>            
+                <textarea name="comments" id="comments" cols="20" rows="2" class="textbox" required></textarea>
                 <label for="inquirytype" class="label">Category:</label>
                 <select name="inquirytype" form="contactform">
                   <option value="Volunteer">Volunteer</option>
@@ -37,15 +42,15 @@ include 'includes/header.php';
         </div>
     </div>
 
-        <!-- footer from php file-->
+    <!-- footer from php file-->
 
-<?php
+    <?php
 
 include 'includes/footer.php';
 
 ?>
 
-    </div>
-</body>
+        </div>
+        </body>
 
-</html>
+        </html>

@@ -1,11 +1,11 @@
 /*
 File Name: style.css
-Date: 08/03/18
+Date: 08/25/18
 Programmer: Misti D.
 */
 
 
-/* MOBILE STYLESHEET */
+/******************* MOBILE STYLESHEET *******************/
 
 
 /* Responsive design with hidden navigation on mobile devices */
@@ -27,11 +27,26 @@ header {
     background-color: rgb(255, 0, 0);
 }
 
+.centerme {
+    text-align: center;
+}
+
+.clearit {
+	clear: both;
+}
+
+.centerit {
+	text-align: center;
+}
+
+/******************* GENERAL IMAGE STYLING *******************/
+
 #logo {
     display: block;
     margin: 0 auto 0 20px;
-    max-width: 200px;
-    padding-bottom: 20px;
+    max-width: 175px;
+    max-height: 100px;
+    padding-bottom: 40px;
     float: left;
 }
 
@@ -43,74 +58,463 @@ img {
     width: 100%;
 }
 
-main h1	{
-	text-align: center;
-    padding-top: 5em;
+#featuredimg {
+    color: #000;
+    text-align: center;
+    padding: 1px;
+    list-style-type: none;
+    padding-bottom: 20px;
 }
 
-main h3	{
-	text-align: center;
+#featuredimg img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#hero {
+    max-width: 100%;
+}
+
+/******************* MAIN CONTENT STYLING ******************/
+
+main h1 {
+    text-align: center;
+    padding-top: 1em;
+    font-size: 2.6em;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.3pt;
+    word-spacing: 2.1pt;
+    line-height: 1em;
+    margin-bottom: 0.75em;
+}
+
+main h3 {
+    text-align: center;
     margin-top: 2em;
     clear: both;
 }
 
-/* Contact & Registration Form Styling */
+#headline {
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 1.3pt;
+    word-spacing: 2.1pt;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 1em;
+    clear: both;
+}
 
-#address	{
-	text-align: center;
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+p {
+    margin: 1em;
+}
+
+h2, h3, h4 {
+    text-align: center;
+    letter-spacing: 1.6pt;
+    word-spacing: 2.1pt;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 1em;
+}
+
+h1 {
+    font-size: 1.3em;
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 1.1em;
+    line-height: 2em;
+    padding-top: 10px;
+}
+
+h3 {
+    font-size: 0.9em;
+}
+
+h4 {
+    font-size: 0.7em;
+    color: #FFF;
+}
+
+em {
+    font-style: italic;
+}
+
+section {
+    padding: 1em;
+}
+
+section h2 {
+    background-color: red;
+    color: white;
+    line-height: 1em;
+    padding: 0.5em;
+    text-shadow: 1px 1px 1px #000; 
+}
+
+/****************** EVENT PAGE SPECIFIC STYLING *****************/
+
+#faq h3 {
+    font-style: italic;
+    text-align: left;
+}
+
+#eventinfo {
+    list-style-type: none;
+    padding-top: 1em;
+}
+
+#eventinfo img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#eventinfo p {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#amenities {
+    text-align: left;
+}
+
+#amenities li {
+    list-style-type: circle;
+}
+
+#fees {
+    text-align: left;
+}
+
+#fees li {
+    list-style-type: circle;
+}
+
+.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#button {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+}
+
+.buttonstyle {
+    border-top: 1px solid #f5f5f5;
+    background: goldenrod;
+    padding: 7.5px 15px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: black;
+    font-size: 24px;
+    font-family: 'Oswald', Sans-Serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: middle;
+   }
+
+.button:hover {
+    border-top-color: #b5a32b;
+    background: #b5a32b;
+    color: #ccc;
+   }
+
+.button:active {
+    border-top-color: #bf9f0f;
+    background: #bf9f0f;
+   }
+
+#button a:visited {
+    color: #000;
+   }
+
+/****************** EVENT PAGE EMBEDDED FEED STYLING *****************/
+
+#feedsection {
+    text-align: center;
+    padding: 1px;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+#feedsection img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/******************* Weatherwidget.io WIDGET STYLING *******************/
+
+.weatherwidget-io {
+    margin: 0 auto;
+    padding: 1em;
+    clear: both;
+    max-width: 300px;
+    min-height: 520px;
+}
+
+/******************* FACEBOOK OFFICIAL IFRAME STYLING *******************/
+/*for future styling*/
+
+/******************* TWITTER OFFICIAL WIDGET STYLING *******************/
+
+.twitter-timeline {
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.fa {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.panel-title {
+    font-size: 25px; 
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+}
+.panel-heading {
+     background-color: #1da1f2;
+     color: #1da1f2;
+}
+
+.panel {
+    max-width: 100%;
+}
+    
+/****************** FOOTER STYLING ******************/
+
+#contact {
+    font-size: 0.75em;
+    text-align: center;
+    color: #FFF;
+    padding: 10px;
+    padding-bottom: 20px;
+    line-height: 0.75em;
+    text-shadow: 0.3px 0.3px 0.3px gray;
+}
+
+#contact a:link {
+    text-decoration: none;
+}
+
+footer {
+    font-size: .80em;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(255, 0, 0);
+    clear: both;
+}
+
+#social {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#social a {
+    color: #FFF;
+}
+
+.socicon {
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+copyright {
+    color: #FFF;
+    font-size: .80em;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+/****************** HOME PAGE IMAGE SLIDESHOW *******************/
+
+.cycle-slideshow {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cycle-prev, .cycle-next {
+    cursor: pointer;
+    font-size: 6em;
+    margin-top: -0.6em;
+    opacity: 0.4;
+    position: absolute;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transition: opacity 0.3s;
+    z-index: 102;
+}
+
+.cycle-prev:hover, .cycle-next:hover {
+    opacity: 0.9;
+}
+
+.cycle-prev {
+    left: 0.1em;
+}
+
+.cycle-prev:before {
+    content: '\276E';
+}
+
+.cycle-next {
+    right: 0.1em;
+}
+
+.cycle-next:before {
+    content: '\276F';
+}
+
+.cycle-pager {
+    color: black;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.cycle-pager span {
+    cursor: pointer;
+    display: inline-block;
+    height: 1em;
+    width: 0.667em;
+}
+
+.cycle-pager span.cycle-pager-active {
+    color: #a0d468;
+    color: rgba(160, 212, 104, 0.8)
+}
+
+.cycle-pager span:hover {
+    color: #a0d468;
+    color: rgba(160, 212, 104, 0.4);
+}
+
+
+/******************* Optional Image Overlay and Caption
+
+
+.cycle-overlay {
+	background: black;
+	background: rgba(0,0,0,0.6);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: 101;
+    max-height: 50px;
+}
+
+.caption {
+	color: white;
+}
+
+.caption h2 {
+	color: white;
+	font-size: 1em;
+}
+
+.caption p {
+	font-style: italic;
+}
+*/
+
+/******************* CONTACT & REGISTRATION FORM STYLING *******************/
+
+#address {
+    text-align: center;
     padding-top: 5em;
 }
 
 #contactform {
-	color: #FFFFFF;
-	width: 100%;
-	margin: 0 5px;
+    color: #FFFFFF;
+    width: 75%;
+    margin: 0 auto;
     padding-bottom: 10em;
 }
 
 #regform {
-	color: #FFFFFF;
-	width: 100%;
-	margin: 0 5px;
+    color: #FFFFFF;
+    width: 75%;
+    margin: 0 auto;
     padding-bottom: 10em;
 }
 
 .label {
-	color: #000;
+    color: #000;
     width: 25%;
-	float: left;
-	clear: left;
-	padding-left: 40px;
+    float: left;
+    clear: left;
+    padding-left: 40px;
 }
 
 .textbox {
-	width: 50%;
-	max-width: 500px;
-	float: left;
-	padding-left: 20px;
+    width: 50%;
+    max-width: 500px;
+    float: left;
+    padding-left: 20px;
 }
 
 select {
-	width: 50%;
-	max-width: 500px;
-	float: left;
-	padding-left: 20px;
+    width: 50%;
+    max-width: 500px;
+    float: left;
+    padding-left: 20px;
 }
 
 .submit {
-	width: 60px;
+    width: 60px;
     clear: both;
     text-align: center;
-	background-color: #666666;
-	color: #FFFFFF;
-	font-family: Arial, sans-serif;
+    background-color: #666666;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
 }
 
 
-/* Hidden navigation for mobile (w3 Schools) */
+/******************* HIDDEN NAVIGATION FOR MOBILE (w3 Schools) *****************/
 
 
 /* Style the links inside the navigation bar */
+
+.topnav a:link {
+    color: #FFFCDD;
+}
+
+.topnav a:visited {
+    color: gray;
+}
+
+.navicon {
+    padding-left: 20px;
+    display: block;
+}
+
+a:link {
+    color: #68321A;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9B9287;
+}
 
 .topnav a {
     clear: both;
@@ -125,7 +529,6 @@ select {
     text-transform: uppercase;
     letter-spacing: 2.0pt;
 }
-
 
 /* Hide the link that should open and close the topnav on small screens */
 
@@ -173,165 +576,15 @@ select {
     }
 }
 
-.topnav a:link {
-    color: #FFFCDD;
-}
+/******************* PHONE STYLING *******************/
 
-.topnav a:visited {
-    color: gray;
-}
-
-.navicon {
-    padding-left: 20px;
-    display: block;
-}
-
-a:link {
-    color: #68321A;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #9B9287;
-}
-
-#hero {
-    max-width: 100%;
-}
-
-#headline {
-    font-size: 2em;
-    text-align: center;
-    letter-spacing: 1.3pt;
-    word-spacing: 2.1pt;
-    font-family: 'Oswald';
-    text-transform: uppercase;
-    margin: 1em;
-    clear: both;
-}
-
-body {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.1em;
-    line-height: 1.5em;
-}
-
-p {
-    margin: 1em;
-}
-
-h2, h3, h4 {
-    text-align: center;
-    letter-spacing: 1.3pt;
-    word-spacing: 2.1pt;
-    font-family: 'Oswald';
-    text-transform: uppercase;
-    margin: 1em;
-}
-
-h1 {
-    font-size: 1em;
-    padding-top: 10px;
-}
-
-h2 {
-    font-size: 1.3em;
-    line-height: 2em;
-    padding-top: 10px;
-}
-
-h3 {
-    font-size: 1.1em;
-}
-
-h4 {
-    font-size: 1.1em;
-    color: #FFF;
-}
-
-em {
-    font-style: italic;
-}
-
-main h1 {
-    font-size: 2.6em;
-    text-align: center;
-    font-family: 'Niconne';
-    letter-spacing: 1.3pt;
-    word-spacing: 2.1pt;
-    line-height: 1em;
-    margin-bottom: 0.75em;
-}
-
-section {
-    padding: 1em;
-}
-
-#contact {
-    font-size: 0.75em;
-    text-align: center;
-    color: #FFF;
-    padding: 10px;
-    padding-bottom: 20px;
-    line-height: 0.75em;
-    text-shadow: 0.3px 0.3px 0.3px gray;
-}
-
-#contact a:link {
-    text-decoration: none;
-}
-
-footer {
-    font-size: .80em;
-    text-align: center;
-    padding: 5px;
-    background-color: rgb(255, 0, 0);
-    clear: both;
-}
-
-#social {
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-#social a {
-    color: #FFF;
-}
-
-.socicon {
-    padding: 20px 30px;
-    text-decoration: none;
-}
-
-copyright {
-    color: #FFF;
-    font-size: .80em;
-    text-align: center;
-    padding: 10px;
-    padding-top: 20px;
-}
-
-.centerme {
-    text-align: center;
-}
-
-#featuredimg {
-    color: #000;
-    text-align: center;
-    padding: 1px;
-    list-style-type: none;
-    padding-bottom: 20px;
-}
-
-#featuredimg img {
-    margin: 0 auto;
-    max-width: 100%;
-}
-
-
-/* SPECIAL MOBILE COLOR STYLING */
+/* Responsive mobile design with hamburger nav for devices under 767px */
 
 @media only screen and (max-width: 767px) {
+    
+    h1 {
+        font-size: 0.9em;
+    }   
     
     #headline {
         background-color: rgb(255, 0, 0);
@@ -344,16 +597,31 @@ copyright {
     #hero {
         padding-top: 10px;
     }
+    
+    #logo {
+        max-width: 30%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .twitter-timeline {
+        max-width: 340px;
+    }
+    
+    .weatherwidget-io {
+        max-width: 300px;
+        min-height: 520px;
+    }
 }
 
 
 /* PHABLET CSS */
 
 
-/* No Change - kept hamburger nav for larger phones with displays up to 767px due to number of menu items (7) */
+/* No Change - kept hamburger nav for larger phones with displays up to 767px */
 
 
-/* TABLET CSS */
+/******************* TABLET STYLING *******************/
 
 
 /* Responsive tablet design with vertical navigation for iPads and larger tablets between 768 and 1024px */
@@ -365,7 +633,8 @@ copyright {
     }
     
     #logo {
-        max-width: 25%;
+        max-width: 175px;
+        padding-top: 10px;
     }
     
     .topnav {
@@ -400,24 +669,21 @@ copyright {
         font-size: 1.1em;
     }
     
-    h1, h2, h3 {
-        font-size: 1.1em;
+    #featuredimg {
+        max-width: 75%;
+        margin: 0 auto;
     }
     
     #contact {
         font-size: 0.9em;
     }
+    
+    #feedsection img {
+        width: 340px;
+    }
 }
 
-
-/* DESKTOP CSS */
-
-
-/* Design Notes - 
-    -Vertical navigation style for mobile is replaced with a traditional horizontal nav bar with a dark background color
-    -Large hero image slider (coming soon)
-    -Image sizes are displayed using max-width properties; main section images are sized to 640x436, and body images are sized to 640x426 for consistency
-    -*/
+/******************* DESKTOP STYLING *******************/
 
 @media only screen and (min-width: 1025px) {
     
@@ -463,8 +729,13 @@ copyright {
     #hero img {
         max-height: 25%;
     }
-        
+    
     main img {
         max-height: 25%;
     }
+    
+    #feedsection img {
+        width: 100%;
+    }
+    
 }

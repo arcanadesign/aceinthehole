@@ -3,7 +3,7 @@
 //CAS222, Misti D. Ace Project - contact_process.php
 
 $EmailFrom = trim(stripslashes($_POST['email']));
-$EmailTo = "misti.dodgens15@pcc.edu";
+$EmailTo = "vexingbox@gmail.com";
 $Subject = "Ace Info Request";
 $Name = trim(stripslashes($_POST['name']));
 $Phone = trim(stripslashes($_POST['phone']));
